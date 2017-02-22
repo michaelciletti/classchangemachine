@@ -15,4 +15,9 @@ class TestCashregister < Minitest::Test
 	def test_cr_pass_2_returns_2_pennies
 		assert_equal({Pennies: 2}, cashregister(2))
 	end
+
+	def test_cr_pass_5_returns_1_nickel
+		assert_equal({Nickels: 1}, cashregister(5))
+	end
+
 end
