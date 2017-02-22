@@ -28,4 +28,8 @@ class TestCashregister < Minitest::Test
 		assert_equal({Dimes: 1}, cashregister(10))
 	end
 
+	def test_cr_pass_11_returns_1_dime_1_penny
+		assert_equal({Dimes: 1, Pennies: 1}, cashregister(11))
+	end
+
 end
