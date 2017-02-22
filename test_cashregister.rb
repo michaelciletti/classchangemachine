@@ -32,4 +32,8 @@ class TestCashregister < Minitest::Test
 		assert_equal({Dimes: 1, Pennies: 1}, cashregister(11))
 	end
 
+	def test_cr_pass_25_returns_1_quarter
+		assert_equal({Quarters: 1}, cashregister(25))
+	end
+
 end
