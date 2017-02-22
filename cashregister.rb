@@ -1,4 +1,4 @@
-def makechange
+def makechange(amount)
 
   
 
