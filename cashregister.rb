@@ -1,8 +1,12 @@
 def cashregister(amount)
 
  change = {}
- if amount == 1 then {Pennies: 1}
- 
+ if amount == 0 
+ 	{}
+ else amount < 5 
+ change = {Pennies: amount}
+	
  end
-  
+
+  change
 end
