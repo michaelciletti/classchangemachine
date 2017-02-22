@@ -1,6 +1,6 @@
-def makechange(amount)
+def cashregister(amount)
 
-  
+ change = {}
 
   
 end
