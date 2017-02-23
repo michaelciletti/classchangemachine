@@ -4,15 +4,18 @@ def cashregister(amount)
 	dimes = 10
 	nickels = 5
 	pennies = 1
-	
+
   change = {}
+ 	if amount >= 25 
+ 		change[:quarters] = amount / 25
+		
  	
 
- 	if amount > 25 && amount < 30
-		change[:quarters] = 1 
-		change[:pennies] = amount - 25
- 	elsif amount == 25 
-		change = {quarters: 1}
+ 	# if amount > 25 && amount < 30
+		# change[:quarters] = 1 
+		# change[:pennies] = amount - 25
+ 	# elsif amount == 25 
+		# change = {quarters: 1}
  	elsif amount >= 20 && amount < 25
  		change[:dimes] = 2
  		change[:pennies] = amount - 20
